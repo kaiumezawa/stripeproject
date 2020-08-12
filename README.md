@@ -53,15 +53,31 @@ In the main app directory, run:
 npm install
 ```
 
-**6. Run the server**
+**6. Run the server.**
 
 Run the command
 
 ```
 npm start
 ```
+**7. Start the Stripe CLI to listen for webhooks.**
 
-**7. Test the app**
+Open a new command line window.
+
+With the Stripe CLI installed, if you have not yet done so run ```stripe login``` on the command line to generate a pairing code to link to your Stripe account. Press **Enter** to launch your browser and log in to your Stripe account to allow access.
+
+```
+$ stripe login
+> Your pairing code is: humour-nifty-finer-magic
+> Press Enter to open up the browser (^C to quit)
+```
+Once you have logged into the CLI, set it up to listen for webhooks by using the ```listen``` command.
+
+```
+stripe listen --forward-to http://localhost:4242/webhook
+```
+
+**8. Test the app**
 
 Visit [http://localhost:4242/](http://localhost:4242/) in your browser.
 
