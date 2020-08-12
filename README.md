@@ -32,6 +32,7 @@ Your API keys can be found [here in your Stripe dashboard](https://dashboard.str
 First, copy the token under the "Publishable Key" in your dashboard and paste it into the second line of the file *client.js*, replacing the words INSERT PUBLISHABLE KEY HERE with your key.
 
 > // Initialize stripe with your test key. Replace INSERT PUBLISHABLE KEY HERE with your publishable key.
+>
 > var stripe = Stripe("INSERT PUBLISHABLE KEY HERE");
 
 
@@ -41,6 +42,7 @@ Second, copy the token in your dashboard under "Secret Key" and paste it into th
 
 
 > // Stripe test key. Replace INSERT SECRET KEY HERE with your secret key.
+>
 > const stripe = require("stripe")("INSERT SECRET KEY HERE");
 
 Save the changes to the *server.js* file.
