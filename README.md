@@ -85,4 +85,8 @@ Visit [http://localhost:4242/](http://localhost:4242/) in your browser.
 
 Here is where you can run the test cases of the app.
 
-Once you have run some successful transactions, if you'd like to view the registry of transactions, the *registry.txt* file will be generated containing the details of all your successful transactions.	
+**9. Check your transaction registry**
+
+Once you have run some successful transactions, if you'd like to view the registry, the file *registry.txt* will have been generated containing the details of all your successful transactions.
+
+If there were no successful transactions, this file will not exist.	
