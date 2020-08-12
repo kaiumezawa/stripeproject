@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="A demo of a card payment on Stripe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="global.css" />
+  </head>
+
+  <body>
+    <form action="/checkout.html">
+    <h1>Welcome to the Digital Pin shop!</h1>
+    <h3>How many pins would you like?</h3>
+    <h4>($12 each. Limit 3 per customer.)</h4>
+     <div>
+      <select id="quantity" name="quantity"> 
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+     </div>
+     <h3>To what email can we send your digital pins?</h3>
+     <input id="email" name="email" type="text" placeholder="joe@example.com"></input>
+      <button id="submit">
+        <div class="spinner hidden" id="spinner"></div>
+        <span id="button-text">Next</span>
+      </button>
+    </form>
+  </body>
+</html>
